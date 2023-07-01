@@ -1,0 +1,36 @@
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/typography' as *;
+
+.ProfileCard {
+    
+    &__nameContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 1.5rem 0.5rem 1.5rem;
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+        @include tablet-breakpoint {
+            padding: 1.5rem 3.5rem 0.5rem 3.5rem;
+        }
+        @include desktop-breakpoint {
+            padding: 3rem 3.5rem 1rem 3.5rem;
+        }
+    }
+    &__image {
+        border: 1px solid black;
+        padding: 1rem;
+        border-radius: 50%;
+        @include tablet-breakpoint {
+            padding: 1.5rem;
+        }
+        @include desktop-breakpoint {
+            padding: 2rem;
+        }
+    }
+    &__name {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
