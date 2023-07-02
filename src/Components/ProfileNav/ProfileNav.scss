@@ -1,0 +1,40 @@
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/typography' as *;
+
+.profileNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+position: relative;
+    &__left {
+        display: flex;
+        justify-content: center;
+        border: none;
+        background: none;
+        outline: none;
+        // width: 100%;
+        &--nav {
+            padding: 0.5rem 3.73rem;
+            @include tablet-breakpoint {
+                padding: 0.5rem 10.73rem;
+            }
+            @include desktop-breakpoint {
+                padding: 0.5rem 18.73rem;
+            }
+        }
+    }
+    &__right {
+        border: none;
+        background: none;
+        // width: 100%;
+        &--nav {
+            padding: 0.5rem 3.73rem;
+            @include tablet-breakpoint {
+                padding: 0.5rem 10.73rem;
+            }
+            @include desktop-breakpoint {
+                padding: 0.5rem 18.73rem;
+            }
+        }
+    }
+}
