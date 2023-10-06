@@ -4,37 +4,17 @@
 .profileNav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
-    &__left {
-        display: flex;
-        justify-content: center;
-        border: none;
-        background: none;
-        outline: none;
-        // width: 100%;
-        &--nav {
-            padding: 0.5rem 3.73rem;
-            @include tablet-breakpoint {
-                padding: 0.5rem 10.73rem;
-            }
-            @include desktop-breakpoint {
-                padding: 0.5rem 18.73rem;
-            }
+    &__button {
+        background-color: white;
+        border: 0;
+        padding: 0.5rem 4.7rem;
+        @include tablet-breakpoint {
+            padding: 0.5rem 11.7rem;
         }
-    }
-    &__right {
-        border: none;
-        background: none;
-        // width: 100%;
-        &--nav {
-            padding: 0.5rem 3.73rem;
-            @include tablet-breakpoint {
-                padding: 0.5rem 10.73rem;
-            }
-            @include desktop-breakpoint {
-                padding: 0.5rem 18.73rem;
-            }
+        @include desktop-breakpoint {
+            padding: 0.5rem 19.7rem;
         }
     }
 }
