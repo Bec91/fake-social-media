@@ -1,0 +1,12 @@
+@use '../../Styles/Partials/mixins' as *;
+@use '../../Styles/Partials/typography' as *;
+
+.profileVideoCard {
+    &__card {
+        height: 5rem;
+        width: 3rem;
+        border: 1px solid black;
+        border-radius: 5%;    
+    }
+
+}
