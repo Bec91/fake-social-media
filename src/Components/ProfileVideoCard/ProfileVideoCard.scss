@@ -6,13 +6,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 0.5rem;
     &__videoCard {
-        position: relative;
-        flex-grow: 1;
+        flex-grow: 2;
         height: 10rem;
         margin: 0.5rem;
-        width: 3rem;
+        width: 5rem;
         border: 1px solid black;
         border-radius: 4%;
+        @include tablet-breakpoint {
+            flex-grow: 4;
+            height: 12rem;
+            margin: 0.5rem;
+            width: 7rem;
+        }
     }
 }
