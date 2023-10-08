@@ -1,15 +1,45 @@
 import './ProfileVideoCard.scss';
-// Need to map videos into li
-// change <img/> to <video/>
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player';
+
 // need thumbnail images for video tags
+
+
 function ProfileVideoCard () {
+
+        const [videoSources, setVideoSources] = useState ([
+            'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            'https://www.youtube.com/watch?v=3tmd-ClpJxA',
+            'https://www.youtube.com/watch?v=JGwWNGJdvx8',
+            'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            'https://www.youtube.com/watch?v=3tmd-ClpJxA',
+            'https://www.youtube.com/watch?v=JGwWNGJdvx8',
+            'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+            'https://www.youtube.com/watch?v=3tmd-ClpJxA',
+            'https://www.youtube.com/watch?v=JGwWNGJdvx8'
+        ])
+        
+        const renderVideos = () => {
+            return videoSources.map((url,index) => (
+                <div className="VideoCardContainer__videoContainer"
+                    key={index}>
+                    <ReactPlayer
+                    className="VideoCardContainer__video"
+                        url={url}
+                        controls={true}
+                        height= "100%"
+                        width="100%"
+                    /> 
+                </div>
+        ))
+    }
     return (
         <div className="VideoCardContainer">
-            <ul className="VideoCardContainer__videoGallery">
-                <li>
-                    <img className="VideoCardContainer__video" src="https://source.unsplash.com/VWcPlbHglYc/640x416" alt=""/>
-                </li>
-            </ul>
+            {/* <div className="VideoCardContainer__videoGallery"> */}
+                
+                    {renderVideos()}
+                
+            {/* </div> */}
         </div>
     )
 }
