@@ -1,5 +1,7 @@
 import './ProfileVideoCard.scss';
-
+// Need to map videos into li
+// change image tag to video tag
+// need thumbnail images for video tags
 function ProfileVideoCard () {
     return (
         <div className="VideoCardContainer">

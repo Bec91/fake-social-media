@@ -16,6 +16,9 @@
         @include desktop-breakpoint {
             padding: 10rem;
         }
+        @include monitor-breakpoint {
+            padding: 10rem 25rem;
+        }
     }
     &__videoGallery > li {
         list-style-type: none;
