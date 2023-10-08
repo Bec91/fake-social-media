@@ -2,19 +2,24 @@
 @use '../../Styles/Partials/typography' as *;
 
 .VideoCardContainer {
-
+    margin: 0;
     &__videoGallery{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 10px;
+        padding: 1.5rem;
         @include tablet-breakpoint {
             flex-direction: row;
+            padding: 5rem;
+        }
+        @include desktop-breakpoint {
+            padding: 10rem;
         }
     }
     &__videoGallery > li {
         list-style-type: none;
-        flex:1 1 auto;
+        flex: 1 1 auto;
         height: 18.75rem;
         position: relative;
         cursor: pointer;
