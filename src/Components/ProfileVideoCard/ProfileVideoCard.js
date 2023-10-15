@@ -9,13 +9,10 @@ function ProfileVideoCard () {
 
         const [videoSources, setVideoSources] = useState ([
             'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-            'https://www.youtube.com/watch?v=3tmd-ClpJxA',
             'https://www.youtube.com/watch?v=JGwWNGJdvx8',
             'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-            'https://www.youtube.com/watch?v=3tmd-ClpJxA',
             'https://www.youtube.com/watch?v=JGwWNGJdvx8',
             'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-            'https://www.youtube.com/watch?v=3tmd-ClpJxA',
             'https://www.youtube.com/watch?v=JGwWNGJdvx8'
         ])
         
@@ -35,11 +32,7 @@ function ProfileVideoCard () {
     }
     return (
         <div className="VideoCardContainer">
-            {/* <div className="VideoCardContainer__videoGallery"> */}
-                
                     {renderVideos()}
-                
-            {/* </div> */}
         </div>
     )
 }
